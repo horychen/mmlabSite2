@@ -4,27 +4,41 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
+  - name: PI
     url: '#about'
     weight: 10
-  - name: Posts
-    url: '#posts'
-    weight: 20
-  - name: Projects
-    url: '#projects'
+  - name: Courses
+    url: '#courses'
+    weight: 15
+  - name: Contact
+    url: '#contact'
     weight: 30
-  - name: Talks
-    url: '#talks'
+  - name: Gallery
+    url: '#gallery'
     weight: 40
-  - name: Publications
-    url: '#featured'
-    weight: 50
   - name: Contact
     url: '#contact'
     weight: 60
+  - name: CoursePage
+    url: courses/
+    weight: 100
+  # - name: Posts
+  #   url: '#posts'
+  #   weight: 20
+  # - name: Projects
+  #   url: '#projects'
+  #   weight: 30
+  # - name: Talks
+  #   url: '#talks'
+  #   weight: 40
+  # - name: Publications
+  #   url: '#featured'
+  #   weight: 50
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
-#  - name: CV
-#    url: uploads/resume.pdf
-#    weight: 70
+ # - name: CV
+ #   url: uploads/resume.pdf
+ # #   url: uploads/ChenJiahaoCV16July2023.pdf
+ #   weight: 70
