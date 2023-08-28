@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🛴 Electric motor and motion control (EE275) | m&amp;m lab</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/</link><atom:link href="https://horychen.github.io/mmlabSite2/courses/ee275/index.xml" rel="self" type="application/rss+xml"/><description>🛴 Electric motor and motion control (EE275)</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 28 Feb 2023 00:00:00 +0000</lastBuildDate><image><url>https://horychen.github.io/mmlabSite2/courses/ee275/featured.jpg</url><title>🛴 Electric motor and motion control (EE275)</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/</link></image><item><title>C0. LaTeX Basics</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/latex/</link><pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/ee275/latex/</guid><description>&lt;p>
+&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 30 min&lt;/p>
+&lt;h2 id="c01-texlive">C0.1. Texlive&lt;/h2>
+&lt;ul>
+&lt;li>Download &lt;a href="https://tug.org/texlive/windows.html" target="_blank" rel="noopener">Texlive&lt;/a> overnight and install.
+&lt;ul>
+&lt;li>We will use a small tool &amp;ldquo;latexmk&amp;rdquo; that comes with texlive. Last time I check latexmk is written in Perl.&lt;/li>
+&lt;li>&lt;code>latexmk.exe&lt;/code> is located here: &lt;code>D:\Programs\texlive\2021\bin\win32\latexmk.exe&lt;/code>. I often add this directory to my path variable and I can execute latexmk.exe in cmd.exe&lt;/li>
+&lt;li>To use latexmk to do the dirty job for ya, execute following commands in the diretory where your .tex file locates:
+&lt;ul>
+&lt;li>&lt;code>latexmk -quiet -pdf -synctex=1 -pvc -view=none main.tex&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>If your .tex file contains Chinese characters, use this instead:
+&lt;ul>
+&lt;li>&lt;code>latexmk -quiet --xelatex -synctex=1 -pvc -view=none main.tex&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="c02-sumatrapdf">C0.2. SumatraPDF&lt;/h2>
+&lt;ul>
+&lt;li>Download &lt;a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer" target="_blank" rel="noopener">SumatraPDF&lt;/a> and install.&lt;/li>
+&lt;li>I recommend to use &lt;a href="https://www.sumatrapdfreader.org//dl//rel/2.5.2/SumatraPDF-2.5.2-install.exe" target="_blank" rel="noopener">SumatraPDF 2&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h2 id="c03-winedt">C0.3. WinEdt&lt;/h2>
+&lt;p>I am aware that there are a lot of options for LaTeX editor,
+and I am also aware VS code is one of them.
+However, I would still suggest you trying out &lt;a href="https://www.winedt.com/download.html" target="_blank" rel="noopener">WinEdt&lt;/a>. It seems since WinEdt 11 it is no longer free, so download WinEdt 10.&lt;/p>
+&lt;ul>
+&lt;li>You can make it work with SumatraPDF.
+&lt;ul>
+&lt;li>See &lt;a href="https://github.com/horychen/snippets#winedt-103-and-sumatrapdf" target="_blank" rel="noopener">my tips for using WinEdt&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-note">
+&lt;div>
+My tips are valid for WinEdt 10 and are not tested for WinEdt 11.
+&lt;/div>
+&lt;/div>
+&lt;h2 id="c04-overleaf">C0.4. Overleaf&lt;/h2>
+&lt;p>&lt;a href="https://www.overleaf.com/" target="_blank" rel="noopener">Overleaf&lt;/a> provides you web browser based editor and compiler experience.
+If you are IEEE member, you can use the full capability of overleaf including collaborate with multiple authors and git service.&lt;/p>
+&lt;p>YOU CAN LEARN LaTeX by going through &lt;a href="https://www.overleaf.com/learn" target="_blank" rel="noopener">the documentation of Overleaf&lt;/a>,
+or of course there is a &lt;a href="https://www.youtube.com/watch?v=VhmkLrOjLsw" target="_blank" rel="noopener">&amp;ldquo;Learn LaTeX in one video&amp;rdquo; video by Derek Banas&lt;/a>.&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/VhmkLrOjLsw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div></description></item><item><title>C1. Python Basics</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/python/</link><pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/ee275/python/</guid><description>&lt;!-- This also prevent a abstract appearing in CoursePage -->
+&lt;p>
+&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 15 min&lt;/p>
+&lt;h2 id="c11-prerequisite">C1.1. Prerequisite&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Download and install &lt;a href="https://www.anaconda.com/" target="_blank" rel="noopener">Anaconda 3&lt;/a> before class.&lt;/p>
+&lt;ul>
+&lt;li>Anaconda 3 is a Python distribution which will be the compiler for our Python codes;&lt;/li>
+&lt;li>We are going to use it to create virtual environment to ensure everybody in this class is on the same page;&lt;/li>
+&lt;li>The version does not matter if we use virtual environment. I installed &lt;em>Anaconda3-2022.10-Windows-x86_64.exe&lt;/em> for my Windows machine.&lt;/li>
+&lt;li>For Windows PCs, you can set up a virtual environment following these steps:
+&lt;ul>
+&lt;li>Open anaconda prompt, or alternatively, you can add anaconda to system path (the Windows environment variable).
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">D:\Programs\anaconda3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D:\Programs\anaconda3\Scripts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">D:\Programs\anaconda3\Library\bin
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>After doing this, you can call python.exe and pip.exe in your command prompt (cmd.exe)&lt;/li>
+&lt;li>Create a virtual environment python 3.10 under the name &amp;ldquo;main&amp;rdquo;:
+&lt;ul>
+&lt;li>&lt;code>conda create -n main python=3.10&lt;/code>&lt;/li>
+&lt;li>Type &lt;code>y&lt;/code> to confirm downloading the packages and wait.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Activate it
+&lt;ul>
+&lt;li>&lt;code>conda activate main&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Now, if you run command &lt;code>pip install&lt;/code>, the packages will be installed for this virtual environment
+&lt;ul>
+&lt;li>&lt;code>pip install matplotlib pandas numba control dearpygui&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Open file explorer.exe at current directory
+&lt;ul>
+&lt;li>&lt;code>explorer.exe .&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Create a file named &lt;code>my_dearpygui_demo.py&lt;/code> and paste the following codes and save
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">dearpygui.dearpygui&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">dpg&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">dearpygui.demo&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">demo&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dpg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">create_context&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dpg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">create_viewport&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">title&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;Custom Title&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">width&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">600&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">height&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">600&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">demo&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">show_demo&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dpg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">setup_dearpygui&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dpg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">show_viewport&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dpg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">start_dearpygui&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">dpg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">destroy_context&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>Run python codes
+&lt;ul>
+&lt;li>&lt;code>python my_dearpygui_demo.py&lt;/code>&lt;/li>
+&lt;li>Have fun!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>You can check existing virtual environment by typing: &lt;code>conda env list&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Jupyter notebook/lab
+&lt;ul>
+&lt;li>Open cmd.exe and type &lt;code>jupyter lab&lt;/code>. It will fire up jupyter lab in your default browser.&lt;/li>
+&lt;li>I often use jupyter lab to do derivation verification and here is an example (you need to &lt;code>pip install sympy&lt;/code>):
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sympy&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="o">*&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">IPython.display&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">display&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Latex&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># display result without need of print (matlab like)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">IPython.core.interactiveshell&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">InteractiveShell&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">InteractiveShell&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ast_node_interactivity&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;all&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># use mathjax&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">init_printing&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">use_latex&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;mathjax&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Define symbols&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">t&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">p&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">b&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">c&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">d&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">e&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">symbols&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;t, p, a, b, c, d, e&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">L_σ&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Symbol&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">r&lt;/span>&lt;span class="s1">&amp;#39;L_\sigma&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">M_σ&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Symbol&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">r&lt;/span>&lt;span class="s1">&amp;#39;M_\sigma&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">i_alpha&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Function&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">r&lt;/span>&lt;span class="s1">&amp;#39;i_{\alpha}&amp;#39;&lt;/span>&lt;span class="p">)(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">i_beta&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Function&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">r&lt;/span>&lt;span class="s1">&amp;#39;i_{\beta}&amp;#39;&lt;/span>&lt;span class="p">)(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">i_abs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Matrix&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">i_alpha&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">i_beta&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Theta&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Function&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">r&lt;/span>&lt;span class="s1">&amp;#39;\varTheta&amp;#39;&lt;/span>&lt;span class="p">)(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Omega&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Theta&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">diff&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Display stuff&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">display&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">i_abs&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">display&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">Omega&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">100&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">a&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="mi">100&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">a&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Rotation Matrix&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">P&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Matrix&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[&lt;/span> &lt;span class="n">cos&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">sin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="p">),&lt;/span> \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span>&lt;span class="n">sin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">cos&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="p">)]&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">P_inv&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">P&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">T&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Full Park transformation (power invariant)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">T&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">Matrix&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span> &lt;span class="n">cos&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">cos&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">pi&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="n">cos&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">pi&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span>&lt;span class="n">sin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">sin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">pi&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">sin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Theta&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">pi&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="mi">1&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">),&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">sqrt&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">)]&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">T_inv&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">T&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">T&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Verify inverse equals transpose&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">display&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">simplify&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">T&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">T_inv&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">display&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">simplify&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">T_inv&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">T&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Matrix&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Labcσs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Matrix&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">L_σ&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">M_σ&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">M_σ&lt;/span>&lt;span class="p">,&lt;/span> \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">M_σ&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">L_σ&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">M_σ&lt;/span>&lt;span class="p">,&lt;/span> \
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">M_σ&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">M_σ&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">L_σ&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">display&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Labcσs&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Ldqnσs&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">T&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">Labcσs&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">T_inv&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">display&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">simplify&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Ldqnσs&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># LaTeX&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">latex&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">simplify&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Ldqnσs&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;li>&lt;code>ctrl+enter&lt;/code> to execute and stay at current block.&lt;/li>
+&lt;li>&lt;code>shift+enter&lt;/code> to execute and move to next block.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Download and install &lt;a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">Visual Studio Code&lt;/a> before class. VS code is a popular editor for programmers.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>You need to install extension for Python&lt;/strong>&lt;/li>
+&lt;li>We can then take advantage of its super-cool jupyter notebook compatibility.
+&lt;ul>
+&lt;li>&lt;del>Option 1: to activate a regular jupyter notebook, press &lt;code>ctrl+shift+p&lt;/code>, type &lt;code>create: new jupyter notebook&lt;/code>.&lt;/del>&lt;/li>
+&lt;li>Option 2: use the magic command &lt;code>#%%&lt;/code> in your regular .py file.
+&lt;ul>
+&lt;li>&lt;code>ctrl+enter&lt;/code> to execute and stay at current block.&lt;/li>
+&lt;li>&lt;code>shift+enter&lt;/code> to execute and move to next block.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Alternative editor I very like is &lt;a href="https://www.sublimetext.com/download" target="_blank" rel="noopener">sublime text 4&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="c12-outline">C1.2. Outline&lt;/h2>
+&lt;ol>
+&lt;li>Numerical simulation essentials
+&lt;ul>
+&lt;li>Euler method (ode1)&lt;/li>
+&lt;li>Runge Kutta method (ode4)&lt;/li>
+&lt;li>Learn concept of a variable step size solver&lt;/li>
+&lt;li>Solve for some example systems&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Numba accelerated simulation&lt;/li>
+&lt;li>Separation between simulation framework and motor dynamics&lt;/li>
+&lt;/ol>
+&lt;!-- 数值积分1阶4阶
+可视化洛伦兹系统
+numba加速
+框架和电机模型分开
+-->
+&lt;h2 id="c13-my-python-tutorials">C1.3. My Python Tutorials&lt;/h2>
+&lt;p>&lt;a href="https://github.com/horychen/ee275/blob/master/python_tutorial_cjh.ipynb" target="_blank" rel="noopener">Donwload jupyter notebook .ipynb file here.&lt;/a>.&lt;/p>
+&lt;h2 id="c1-learn-python-in-one-video-by-derek-banas-n4mezfdjqta">C1.?. Learn Python in one video by Derek Banas (N4mEzFDjqtA)&lt;/h2>
+&lt;p>(need access to Youtube)
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/N4mEzFDjqtA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;/p>
+&lt;h2 id="c1-quiz">C1.?. Quiz&lt;/h2>
+&lt;details class="spoiler " id="spoiler-2">
+&lt;summary>What is the difference between lists and tuples?&lt;/summary>
+&lt;p>&lt;p>Lists&lt;/p>
+&lt;ul>
+&lt;li>Lists are mutable - they can be changed&lt;/li>
+&lt;li>Slower than tuples&lt;/li>
+&lt;li>Syntax: &lt;code>a_list = [1, 2.0, 'Hello world']&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>Tuples&lt;/p>
+&lt;ul>
+&lt;li>Tuples are immutable - they can&amp;rsquo;t be changed&lt;/li>
+&lt;li>Tuples are faster than lists&lt;/li>
+&lt;li>Syntax: &lt;code>a_tuple = (1, 2.0, 'Hello world')&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;details class="spoiler " id="spoiler-3">
+&lt;summary>Is Python case-sensitive?&lt;/summary>
+&lt;p>Yes&lt;/p>
+&lt;/details></description></item><item><title>C2. Coding Motor Dynamics</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/dynamics/</link><pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/ee275/dynamics/</guid><description>&lt;p>
+&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours&lt;/p>
+&lt;h2 id="learn">Learn&lt;/h2>
+&lt;p>The general form of the &lt;strong>normal&lt;/strong> probability density function is:&lt;/p>
+&lt;p>$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi} } e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$&lt;/p>
+&lt;div class="alert alert-note">
+&lt;div>
+The parameter $\mu$ is the mean or expectation of the distribution.
+$\sigma$ is its standard deviation.
+The variance of the distribution is $\sigma^{2}$.
+&lt;/div>
+&lt;/div>
+&lt;h2 id="quiz">Quiz&lt;/h2>
+&lt;details class="spoiler " id="spoiler-2">
+&lt;summary>What is the parameter $\mu$?&lt;/summary>
+&lt;p>The parameter $\mu$ is the mean or expectation of the distribution.&lt;/p>
+&lt;/details></description></item><item><title>C3. Visualization with DearPyGUI</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/visualization/</link><pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/ee275/visualization/</guid><description>&lt;p>
+&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 30 min&lt;/p>
+&lt;h2 id="prerequisite">Prerequisite&lt;/h2>
+&lt;ol>
+&lt;li>Learn how to do numerical integration/simulaiton&lt;/li>
+&lt;/ol>
+&lt;h2 id="coding">Coding&lt;/h2>
+&lt;p>We are going to visualize the state transtion of the Lorenz system with aid of
+&lt;mark>DearPyGUI&lt;/mark>.&lt;/p>
+&lt;!--
+{{ .Site.Pages }}
+{{ .Title }}
+-->
+&lt;!--more-->
+&lt;!-- ## Learn
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/hSPmj7mK6ng" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+-->
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lorenz_system#:~:text=The%20Lorenz%20system%20is%20a,solutions%20of%20the%20Lorenz%20system." target="_blank" rel="noopener">Lorenz System&lt;/a>&lt;/p>
+&lt;h2 id="quiz">Quiz&lt;/h2>
+&lt;details class="spoiler " id="spoiler-3">
+&lt;summary>Write Plotly code to render a bar chart&lt;/summary>
+&lt;p>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">plotly.express&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">px&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">data_canada&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">px&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">gapminder&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">query&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;country == &amp;#39;Canada&amp;#39;&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">fig&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">px&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">bar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">data_canada&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;year&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">y&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s1">&amp;#39;pop&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">fig&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">show&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/p>
+&lt;/details></description></item></channel></rss>

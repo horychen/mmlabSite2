@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://horychen.github.io/mmlabSite2/sitemap.xml
