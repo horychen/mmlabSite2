@@ -136,7 +136,7 @@ numba加速
 [Donwload jupyter notebook .ipynb file here.](https://github.com/horychen/ee275/blob/master/python_tutorial_cjh.ipynb).
 
 
-## C1.?. Learn Python in one video by Derek Banas 
+## C1.?. Learn Python in one video by Derek Banas (N4mEzFDjqtA)
 (need access to Youtube)
 {{< youtube N4mEzFDjqtA >}}
 
