@@ -4,7 +4,8 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: m&m lab # Website name
-baseURL: 'https://faculty.sist.shanghaitech.edu.cn/chenjh/' # Website URL
+# baseURL: 'https://faculty.sist.shanghaitech.edu.cn/chenjh/' # Website URL
+baseURL: 'https://horychen.github.io/mmlabSite2/' # Website URL
 
 ############################
 ## LANGUAGE
