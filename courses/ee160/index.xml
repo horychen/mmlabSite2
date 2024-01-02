@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>💨Introduction to control (EE160) | m&amp;m lab</title><link>https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/ee160/</link><atom:link href="https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/ee160/index.xml" rel="self" type="application/rss+xml"/><description>💨Introduction to control (EE160)</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/ee160/featured.png</url><title>💨Introduction to control (EE160)</title><link>https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/ee160/</link></image></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>💨Introduction to control (EE160) | m&amp;m lab</title><link>https://horychen.github.io/mmlabSite2/courses/ee160/</link><atom:link href="https://horychen.github.io/mmlabSite2/courses/ee160/index.xml" rel="self" type="application/rss+xml"/><description>💨Introduction to control (EE160)</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 10 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://horychen.github.io/mmlabSite2/courses/ee160/featured.png</url><title>💨Introduction to control (EE160)</title><link>https://horychen.github.io/mmlabSite2/courses/ee160/</link></image><item><title>Preclass math (Two Kernels)</title><link>https://horychen.github.io/mmlabSite2/courses/ee160/math_preclass/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/ee160/math_preclass/</guid><description>&lt;p>
+&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours&lt;/p>
+&lt;h2 id="kernel-in-integral-transform">Kernel in Integral Transform}&lt;/h2>
+&lt;h2 id="kernel-in-linear-algebra">Kernel in Linear Algebra&lt;/h2>
+&lt;!-- %比如计算一个矩阵的秩，判断可控性要用，然后还要有延伸更好，比如可以介绍 det = dim - kernel，kernel 代表有多少维的空间在这个矩阵变换下变成了零维的点。 -->
+&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+The parameter $\mu$ is the mean or expectation of the distribution.
+$\sigma$ is its standard deviation.
+The variance of the distribution is $\sigma^{2}$.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!-- ## Quiz
+&lt;details class="spoiler " id="spoiler-2">
+&lt;summary>What is the parameter $\mu$?&lt;/summary>
+&lt;p>The parameter $\mu$ is the mean or expectation of the distribution.&lt;/p>
+&lt;/details>
+--></description></item></channel></rss>
