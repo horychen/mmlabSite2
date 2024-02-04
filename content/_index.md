@@ -249,7 +249,9 @@ sections:
       directions: Enter SIST Building 1, find Area D and take the lift to 1D-206 on Floor 2.
       text: |-
         {{% callout note %}}
-        If you are a student on campus please feel free to shoot me an email if interested in m&m lab.
+        [Graduate] We currently have one position open for an engineering master, please fill out this questionare (https://www.wjx.top/vm/wF0l6L2.aspx#) and send me an email.
+
+        [Undergraduate] If you are a student on campus please feel free to shoot me an email if interested in m&m lab.
         {{% /callout %}}        
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
