@@ -12,7 +12,7 @@ tags:
 <!-- {{< toc hide_on="xl" >}} -->
 
 
-Step 1, get WSL2.
+**Step 1, get WSL2.**
 1. Type winkey (the Windows key between Ctrl and Alt), type `Turn Windows Features on or off` and open, tick `Windows subsystem for Linux`. 
 2. Install Ubuntu 20.04 version from Microsoft Store.
 3. Retart and configure your Ubuntu (wsl).
@@ -24,22 +24,23 @@ Step 1, get WSL2.
 > 4.3. restart wsl by opening a cmd.exe with admin privilege running command `wsl --shutdown`
 > see `https://x410.dev/cookbook/wsl/disabling-wslg-or-using-it-together-with-x410/`
 
-Step 2, get VS Code.
+**Step 2, get VS Code.**
 > In VS Code, install the extension named "WSL". It allows you to work with a terminal as if you are on an Ubuntu machine.
 
-Step 3, install drake.
+**Step 3, install drake.**
 > https://drake.mit.edu/pydrake/pydrake.tutorials.html
 > https://drake.mit.edu/python_bindings.html#using-the-python-bindings
 
-The official steps are:
+My recommended steps are:
 ```bash
-ON WSL2 Ubuntu 20.04
+# ON WSL2 Ubuntu 20.04
 
 sudo apt-get update
 sudo apt install python3-pip
 sudo apt install python3.8-venv
 
 python3 -m venv main2 # this will create a folder named "./main2" in the current directory "."
+
 # source main3/bin/activate # use this to activate the virtual env
 
 main2/bin/pip install --upgrade pip # drake requires pip version > 20.3
@@ -50,21 +51,18 @@ main2/bin/pip install ipywidgets
 
 main2/bin/python3 -m pydrake.tutorials
 # this gives: ERROR: the Jupyter notebook runtime is not installed!
-# but you can now run ipynb files from the course companion codes 
+# but you can now run ipynb files from the course companion codes.
 
 # http://localhost:7000/
-# open authoring_multibody_simulation.ipynb
 ```
-BUT somehow I cannot enable my python3 venv encironment in wsl2. Instead, I run pydrake without setting an virtual environment.
-
-Step 4, model simple system in drake. 
-> see https://deepnote.com/workspace/Drake-0b3b2c53-a7ad-441b-80f8-bf8350752305/project/Tutorials-2b4fc509-aef2-417d-a40d-6071dfed9199/notebook/dynamical_systems-a0c7b0f1313b47f78fa25ea83ea616ce?
 
 
-Step 5, https://github.com/RussTedrake/underactuated
 
+
+
+<!-- BUT somehow I cannot enable my python3 venv encironment in wsl2. Instead, I run pydrake without setting an virtual environment. -->
+<!-- Step 4, https://github.com/RussTedrake/underactuated
 `git clone https://github.com/RussTedrake/underactuated.git`
-
 to run, e.g., ipynb in folder ./dp, you need to fix the dependency issue by adding following snippets
 ```python
 import sys; sys.path.insert(0, '/home/hory/codes/underactuated')
@@ -73,11 +71,41 @@ import sys, os; sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 ```
 
 `pip3 install mpld3 packaging`
+ -->
 
 
-Step 6, go through tutorials: cartpole_urdf.ipynb, cartpole_balancing.ipynb, and authoring_multibody_simulaiton.py 
 
+**Step 4, go through [official tutorials](https://github.com/RussTedrake/underactuated)**
+
+I personally like `cartpole_urdf.ipynb`, `cartpole_balancing.ipynb`, and `authoring_multibody_simulaiton.py` the most.
+
+---
 Other related Links:
+> Lectures by Zhang, Wei @ SUSTech:
+>
+> https://www.youtube.com/watch?v=_HpUZU6Zlqw
+>
+> Finger manipulating a box:
+>
+> https://medium.com/@berk9848/drake-first-tutorial-275042d145b4
+> 
+> Examples from underactuated chapter 3:
+>
+> https://deepnote.com/app/zhongqi-wei/Ch-3-Acrobots-Cart-Poles-and-Quadrotors-Duplicate-b398742d-b8c6-4604-a80e-2e0627ff0f76
+>
+> Drake (the Cpp version of CartPole LQR):
+> 
+> https://drake.guzhaoyuan.com/drake-controllers/lqr-on-cart-pole
+>
+> More cartpoles:
+>
 > https://github.com/robotics-laboratory/cart-pole
+>
 > https://cartpole.robotics-lab.ru/3.0.0/dynamics/
+>
 > https://www.youtube.com/@robotics_lab/videos
+>
+> Fish robot:
+>
+> https://www.youtube.com/watch?v=oNmSqHzHQXg
+>
