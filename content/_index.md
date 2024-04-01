@@ -85,8 +85,8 @@ sections:
           title: EE275 electric motor and motion control
           url: "https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/ee275/"
         - certificate_url: #https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/example/
-          date_end: "2023-09-26"
-          date_start: "2024-01-15"
+          date_end: "2024-01-15"
+          date_start: "2023-09-26"
           description: "Introduce the control theory as per my personal tastes."
           organization: "Undergraduate (SIST Curriculum)"
           organization_url: "https://sist.shanghaitech.edu.cn/sist_en/3905/list.htm"
@@ -249,10 +249,13 @@ sections:
       directions: Enter SIST Building 1, find Area D and take the lift to 1D-206 on Floor 2.
       text: |-
         {{% callout note %}}
-        [Graduate] We currently have one position open for an engineering master, please fill out this questionare (https://www.wjx.top/vm/wF0l6L2.aspx#) and send me an email.
+        [Graduate] We are now full for year 2024 candidates.
 
         [Undergraduate] If you are a student on campus please feel free to shoot me an email if interested in m&m lab.
         {{% /callout %}}        
+      # [Graduate] (We are full for year 2024 candidates)
+      # We currently have one position open for an engineering master, please fill out this questionare (https://www.wjx.top/vm/wF0l6L2.aspx#) and send me an email.
+
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'

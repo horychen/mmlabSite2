@@ -27,7 +27,7 @@ Step 1, get WSL2.
 Step 2, get VS Code.
 > In VS Code, install the extension named "WSL". It allows you to work with a terminal as if you are on an Ubuntu machine.
 
-Step 3, install pydrake.
+Step 3, install drake.
 > https://drake.mit.edu/pydrake/pydrake.tutorials.html
 > https://drake.mit.edu/python_bindings.html#using-the-python-bindings
 
@@ -39,13 +39,20 @@ sudo apt-get update
 sudo apt install python3-pip
 sudo apt install python3.8-venv
 
-# this will create a folder named "./main2" in the current directory "."
-python3 -m venv main2
+python3 -m venv main2 # this will create a folder named "./main2" in the current directory "."
+# source main3/bin/activate # use this to activate the virtual env
 
+main2/bin/pip install --upgrade pip # drake requires pip version > 20.3
 main2/bin/pip install drake
+main2/bin/pip install underactuated
 main2/bin/pip install notebook
-main2/python3 -m pydrake.tutorials
-http://localhost:7000/
+main2/bin/pip install ipywidgets
+
+main2/bin/python3 -m pydrake.tutorials
+# this gives: ERROR: the Jupyter notebook runtime is not installed!
+# but you can now run ipynb files from the course companion codes 
+
+# http://localhost:7000/
 # open authoring_multibody_simulation.ipynb
 ```
 BUT somehow I cannot enable my python3 venv encironment in wsl2. Instead, I run pydrake without setting an virtual environment.
@@ -68,8 +75,9 @@ import sys, os; sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 `pip3 install mpld3 packaging`
 
 
+Step 6, go through tutorials: cartpole_urdf.ipynb, cartpole_balancing.ipynb, and authoring_multibody_simulaiton.py 
 
-Related Links:
+Other related Links:
 > https://github.com/robotics-laboratory/cart-pole
 > https://cartpole.robotics-lab.ru/3.0.0/dynamics/
 > https://www.youtube.com/@robotics_lab/videos

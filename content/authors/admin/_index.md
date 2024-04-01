@@ -106,5 +106,5 @@ Before joining ShanghaiTech University, he has worked at University of Wisconsin
 Dr. Chen has been sharing his codes for sensorless motor control simulation and bearingless motor optimization since 2019.
 {style="text-align: justify;"}
 
-{{< icon name="download" pack="fas" >}} Download his {{< staticref "uploads/ChenJiahaoCV16July2023.pdf" "newtab" >}}Curriculum Vitae{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download his {{< staticref "uploads/ChenJiahaoCV.pdf" "newtab" >}}Curriculum Vitae{{< /staticref >}}.
 
