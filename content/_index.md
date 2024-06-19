@@ -25,6 +25,8 @@ sections:
 
         Lab members are encouraged to design and build things with the principal investigator (PI), covering electronic design, electromagnetic design, mechanical design, and observer/controller design.
 
+        Our vision is that if we can build it, then others should be able to build it (check out [Github](https://github.com/horychen)).
+
         <!-- 下面几句可以给上面的cta_note加上按钮的装饰 -->
         <!--Custom spacing-->
         <div class="mb-3"></div>
@@ -249,10 +251,10 @@ sections:
       directions: Enter SIST Building 1, find Area D and take the lift to 1D-206 on Floor 2.
       text: |-
         {{% callout note %}}
-        [Graduate] We are now full for year 2024 candidates.
+        [Graduate] We have one vacancy for year 2025 academic master student candidate. Please fill out the questionaire (https://www.wjx.top/vm/PRrcaUS.aspx# ) and send me an email if you are interested.
 
         [Undergraduate] If you are a student on campus please feel free to shoot me an email if interested in m&m lab.
-        {{% /callout %}}        
+        {{% /callout %}}
       # [Graduate] (We are full for year 2024 candidates)
       # We currently have one position open for an engineering master, please fill out this questionare (https://www.wjx.top/vm/wF0l6L2.aspx#) and send me an email.
 
