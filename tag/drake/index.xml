@@ -1,1 +1,101 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>drake | m&amp;m lab</title><link>https://horychen.github.io/mmlabSite2/tag/drake/</link><atom:link href="https://horychen.github.io/mmlabSite2/tag/drake/index.xml" rel="self" type="application/rss+xml"/><description>drake</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://horychen.github.io/mmlabSite2/media/icon_hu808f481cfbb481951df0068c9017ac66_160539_512x512_fill_lanczos_center_3.png</url><title>drake</title><link>https://horychen.github.io/mmlabSite2/tag/drake/</link></image></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Drake | m&amp;m lab</title><link>https://horychen.github.io/mmlabSite2/tag/drake/</link><atom:link href="https://horychen.github.io/mmlabSite2/tag/drake/index.xml" rel="self" type="application/rss+xml"/><description>Drake</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://horychen.github.io/mmlabSite2/media/icon_hu17853203207415561974.png</url><title>Drake</title><link>https://horychen.github.io/mmlabSite2/tag/drake/</link></image><item><title>Drake Demonstration</title><link>https://horychen.github.io/mmlabSite2/courses/drakedemo/</link><pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/drakedemo/</guid><description>&lt;!--
+&lt;details class="toc-inpage d-print-none d-xl-none " open>
+&lt;summary class="font-weight-bold">Table of Contents&lt;/summary>
+&lt;nav id="TableOfContents">&lt;/nav>
+&lt;/details>
+-->
+&lt;p>&lt;strong>Step 1, get WSL2.&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Hold winkey (the key between Ctrl and Alt), type &lt;code>Turn Windows Features on or off&lt;/code> and open, tick &lt;code>Windows subsystem for Linux&lt;/code>.&lt;/li>
+&lt;li>Install Ubuntu 20.04 version from Microsoft Store.&lt;/li>
+&lt;li>Retart and configure your Ubuntu (wsl).&lt;/li>
+&lt;li>(Optional) Check out &amp;ldquo;VMMEM 100% CPU Usage Issue&amp;rdquo; to avoid burning down you PC by disabling the GUI feature.&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>4.1. winkey+R, type in %USERPROFILE%&lt;/p>
+&lt;p>4.2. create a new file named &lt;code>.wslconfig&lt;/code> with content
+&lt;strong>[wsl2]&lt;/strong>
+guiApplications=false&lt;/p>
+&lt;p>4.3. restart wsl by opening a cmd.exe with admin privilege running command &lt;code>wsl --shutdown&lt;/code>
+see &lt;code>https://x410.dev/cookbook/wsl/disabling-wslg-or-using-it-together-with-x410/&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Step 2, get VS Code.&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>In VS Code, install the extension named &amp;ldquo;WSL&amp;rdquo;. It allows you to work with a terminal as if you are on an Ubuntu machine.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Step 3, get Python (and miniconda).&lt;/strong>&lt;/p>
+&lt;p>The package management software conda makes things easier for newbies, and we will install miniconda&lt;/p>
+&lt;blockquote>
+&lt;p>mkdir -p ~/miniconda3
+wget was unable to establish SSL connection
+so I manually go to &lt;a href="https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh" target="_blank" rel="noopener">https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh&lt;/a> and download miniconda for linux
+bash ~/miniconda3/Miniconda3-latest-Linux-x86_64.sh -b -u -p ~/miniconda3
+~/miniconda3/bin/conda init bash&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>Step 4, install drake.&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://drake.mit.edu/pydrake/pydrake.tutorials.html" target="_blank" rel="noopener">https://drake.mit.edu/pydrake/pydrake.tutorials.html&lt;/a>
+&lt;a href="https://drake.mit.edu/python_bindings.html#using-the-python-bindings" target="_blank" rel="noopener">https://drake.mit.edu/python_bindings.html#using-the-python-bindings&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>My steps for reference (using miniconda):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">pip install drake underactuated notebook ipywidgets
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>My steps for reference (using venv, not recommended anymore):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># ON WSL2 Ubuntu 20.04&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># get rid of the old python3 (mine is a python3.8)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get clean
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get autoremove --purge
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get remove python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get autoremove
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># get &lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get update
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt-get install python3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install python3-pip
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo apt install python3.8-venv
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">python3 -m venv main2 &lt;span class="c1"># this will create a folder named &amp;#34;./main2&amp;#34; in the current directory &amp;#34;.&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># source main3/bin/activate # use this to activate the virtual env&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">main2/bin/pip install --upgrade pip &lt;span class="c1"># drake requires pip version &amp;gt; 20.3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">main2/bin/pip install drake
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">main2/bin/pip install underactuated
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">main2/bin/pip install notebook
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">main2/bin/pip install ipywidgets
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">main2/bin/python3 -m pydrake.tutorials
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># this gives: ERROR: the Jupyter notebook runtime is not installed!&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># but you can now run ipynb files from the course companion codes.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1"># http://localhost:7000/&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;!-- BUT somehow I cannot enable my python3 venv encironment in wsl2. Instead, I run pydrake without setting an virtual environment. -->
+&lt;!-- Step 4, https://github.com/RussTedrake/underactuated
+`git clone https://github.com/RussTedrake/underactuated.git`
+to run, e.g., ipynb in folder ./dp, you need to fix the dependency issue by adding following snippets
+```python
+import sys; sys.path.insert(0, '/home/hory/codes/underactuated')
+import sys; sys.path.append('../')
+import sys, os; sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+```
+`pip3 install mpld3 packaging`
+-->
+&lt;p>&lt;strong>Step 4, go through &lt;a href="https://github.com/RussTedrake/underactuated" target="_blank" rel="noopener">official tutorials&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>I personally like &lt;code>cartpole_urdf.ipynb&lt;/code>, &lt;code>cartpole_balancing.ipynb&lt;/code>, and &lt;code>authoring_multibody_simulaiton.py&lt;/code> the most.&lt;/p>
+&lt;hr>
+&lt;p>Other related Links:&lt;/p>
+&lt;blockquote>
+&lt;p>Lectures by Zhang, Wei @ SUSTech:&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=_HpUZU6Zlqw" target="_blank" rel="noopener">https://www.youtube.com/watch?v=_HpUZU6Zlqw&lt;/a>&lt;/p>
+&lt;p>Finger manipulating a box:&lt;/p>
+&lt;p>&lt;a href="https://medium.com/@berk9848/drake-first-tutorial-275042d145b4" target="_blank" rel="noopener">https://medium.com/@berk9848/drake-first-tutorial-275042d145b4&lt;/a>&lt;/p>
+&lt;p>Examples from underactuated chapter 3:&lt;/p>
+&lt;p>&lt;a href="https://deepnote.com/app/zhongqi-wei/Ch-3-Acrobots-Cart-Poles-and-Quadrotors-Duplicate-b398742d-b8c6-4604-a80e-2e0627ff0f76" target="_blank" rel="noopener">https://deepnote.com/app/zhongqi-wei/Ch-3-Acrobots-Cart-Poles-and-Quadrotors-Duplicate-b398742d-b8c6-4604-a80e-2e0627ff0f76&lt;/a>&lt;/p>
+&lt;p>Drake (the Cpp version of CartPole LQR):&lt;/p>
+&lt;p>&lt;a href="https://drake.guzhaoyuan.com/drake-controllers/lqr-on-cart-pole" target="_blank" rel="noopener">https://drake.guzhaoyuan.com/drake-controllers/lqr-on-cart-pole&lt;/a>&lt;/p>
+&lt;p>More cartpoles:&lt;/p>
+&lt;p>&lt;a href="https://github.com/robotics-laboratory/cart-pole" target="_blank" rel="noopener">https://github.com/robotics-laboratory/cart-pole&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://cartpole.robotics-lab.ru/3.0.0/dynamics/" target="_blank" rel="noopener">https://cartpole.robotics-lab.ru/3.0.0/dynamics/&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/@robotics_lab/videos" target="_blank" rel="noopener">https://www.youtube.com/@robotics_lab/videos&lt;/a>&lt;/p>
+&lt;p>Fish robot:&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=oNmSqHzHQXg" target="_blank" rel="noopener">https://www.youtube.com/watch?v=oNmSqHzHQXg&lt;/a>&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

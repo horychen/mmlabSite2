@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🛴 Electric motor and motion control (EE275) | m&amp;m lab</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/</link><atom:link href="https://horychen.github.io/mmlabSite2/courses/ee275/index.xml" rel="self" type="application/rss+xml"/><description>🛴 Electric motor and motion control (EE275)</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 28 Feb 2023 00:00:00 +0000</lastBuildDate><image><url>https://horychen.github.io/mmlabSite2/courses/ee275/featured.jpg</url><title>🛴 Electric motor and motion control (EE275)</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/</link></image><item><title>C0. LaTeX Basics</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/latex/</link><pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/ee275/latex/</guid><description>&lt;p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>🛴 Electric motor and motion control (EE275) | m&amp;m lab</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/</link><atom:link href="https://horychen.github.io/mmlabSite2/courses/ee275/index.xml" rel="self" type="application/rss+xml"/><description>🛴 Electric motor and motion control (EE275)</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 28 Feb 2023 00:00:00 +0000</lastBuildDate><image><url>https://horychen.github.io/mmlabSite2/courses/ee275/featured.jpg</url><title>🛴 Electric motor and motion control (EE275)</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/</link></image><item><title>C0. LaTeX Basics</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/latex/</link><pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/ee275/latex/</guid><description>&lt;p>
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 30 min&lt;/p>
 &lt;h2 id="c01-texlive">C0.1. Texlive&lt;/h2>
 &lt;ul>
@@ -46,7 +46,8 @@ If you are IEEE member, you can use the full capability of overleaf including co
 &lt;p>YOU CAN LEARN LaTeX by going through &lt;a href="https://www.overleaf.com/learn" target="_blank" rel="noopener">the documentation of Overleaf&lt;/a>,
 or of course there is a &lt;a href="https://www.youtube.com/watch?v=VhmkLrOjLsw" target="_blank" rel="noopener">&amp;ldquo;Learn LaTeX in one video&amp;rdquo; video by Derek Banas&lt;/a>.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/VhmkLrOjLsw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/VhmkLrOjLsw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+>&lt;/iframe>
 &lt;/div></description></item><item><title>C1. Python Basics</title><link>https://horychen.github.io/mmlabSite2/courses/ee275/python/</link><pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate><guid>https://horychen.github.io/mmlabSite2/courses/ee275/python/</guid><description>&lt;!-- This also prevent a abstract appearing in CoursePage -->
 &lt;p>
 &lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 15 min&lt;/p>
@@ -209,7 +210,8 @@ numba加速
 &lt;h2 id="c1-learn-python-in-one-video-by-derek-banas-n4mezfdjqta">C1.?. Learn Python in one video by Derek Banas (N4mEzFDjqtA)&lt;/h2>
 &lt;p>(need access to Youtube)
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/N4mEzFDjqtA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/N4mEzFDjqtA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+>&lt;/iframe>
 &lt;/div>
 &lt;/p>
 &lt;h2 id="c1-quiz">C1.?. Quiz&lt;/h2>
@@ -266,7 +268,8 @@ The variance of the distribution is $\sigma^{2}$.
 &lt;!--more-->
 &lt;!-- ## Learn
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-&lt;iframe src="https://www.youtube.com/embed/hSPmj7mK6ng" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hSPmj7mK6ng?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+>&lt;/iframe>
 &lt;/div>
 -->
 &lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lorenz_system#:~:text=The%20Lorenz%20system%20is%20a,solutions%20of%20the%20Lorenz%20system." target="_blank" rel="noopener">Lorenz System&lt;/a>&lt;/p>
