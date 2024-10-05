@@ -13,7 +13,7 @@ sections:
         filename: hero-academic.png
       cta:
         label: '**See Courses**'
-        url: https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/
+        url: ./courses/
       # cta_alt:
       #   label: Ask a question
       #   url: https://discord.gg/z8wNYzb
@@ -85,7 +85,7 @@ sections:
           organization: "Graduate/undergraduate (SIST Curriculum)"
           organization_url: "https://sist.shanghaitech.edu.cn/sist_en/3905/list.htm"
           title: EE275 electric motor and motion control
-          url: "https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/ee275/"
+          url: "./courses/ee275/"
         - certificate_url: #https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/example/
           date_end: "2024-01-15"
           date_start: "2023-09-26"
@@ -93,7 +93,7 @@ sections:
           organization: "Undergraduate (SIST Curriculum)"
           organization_url: "https://sist.shanghaitech.edu.cn/sist_en/3905/list.htm"
           title: EE160 introduction to control
-          url: "https://faculty.sist.shanghaitech.edu.cn/chenjh/courses/ee160/"
+          url: "./courses/ee160/"
         # - certificate_url: https://www.coursera.org
         #   date_end: ''
         #   date_start: '2021-01-25'
@@ -192,22 +192,22 @@ sections:
   #     columns: '2'
   #     view: card
   
-  # # 论文
-  # - block: collection
-  #   id: publications
-  #   content:
-  #     title: Recent Publications
-  #     text: |-
-  #       {{% callout note %}}
-  #       Quickly discover relevant content by [filtering publications](./publication/).
-  #       {{% /callout %}}
-  #     filters:
-  #       folders:
-  #         - publication
-  #       exclude_featured: true
-  #   design:
-  #     columns: '2'
-  #     view: citation
+  # 论文
+  - block: collection
+    id: publications
+    content:
+      title: Recent Publications
+      text: |-
+        {{% callout note %}}
+        Quickly discover relevant content by [filtering publications](./publication/).
+        {{% /callout %}}
+      filters:
+        folders:
+          - publication
+        exclude_featured: true
+    design:
+      columns: '2'
+      view: citation
 
   # # 演讲
   # - block: collection
