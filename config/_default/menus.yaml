@@ -22,9 +22,9 @@ main:
   - name: CoursePage
     url: courses/
     weight: 100
-  - name: ProjectPage
-    url: projects/
-    weight: 110
+  # - name: ProjectPage
+  #   url: projects/
+  #   weight: 110
   # - name: Posts
   #   url: '#posts'
   #   weight: 20

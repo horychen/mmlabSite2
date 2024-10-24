@@ -12,97 +12,32 @@ tags:
 <!-- {{< toc hide_on="xl" >}} -->
 
 
-**Step 1, get WSL2.**
-1. Hold winkey (the key between Ctrl and Alt), type `Turn Windows Features on or off` and open, tick `Windows subsystem for Linux`. 
-2. Install Ubuntu 20.04 version from Microsoft Store.
-3. Retart and configure your Ubuntu (wsl).
-4. (Optional) Check out "VMMEM 100% CPU Usage Issue" to avoid burning down you PC by disabling the GUI feature.
-> 4.1. winkey+R, type in %USERPROFILE%
->
-> 4.2. create a new file named `.wslconfig` with content
-> **[wsl2]** 
-> guiApplications=false
-> 
-> 4.3. restart wsl by opening a cmd.exe with admin privilege running command `wsl --shutdown`
-> see `https://x410.dev/cookbook/wsl/disabling-wslg-or-using-it-together-with-x410/`
+We have four ongoing major projects. 
+- bipedal robot
+- maglev system and/or artificial heart
+- four-wheel drive and in-wheel motor
+- robot face that shows how robot feel
+- leopard rotor that has a working waist
+- flying hopper?
 
-**Step 2, get VS Code.**
-> In VS Code, install the extension named "WSL". It allows you to work with a terminal as if you are on an Ubuntu machine.
+**A**
+We are dying to know the essence of multi-contact motion of a bipedal robot.
+We build contact sensor to enhance the perception to the environment.
+We design model based controller that solves the motion of bipedal robot as an optimization problem.
+We design mechanical legs that are backdrivable to make it possible to enable compliant walking/running. 
 
-**Step 3, get Python (and miniconda).**
+We build eddy current based displacement sensor for measuring the displacement of the maglev rotor.
+We do electromagnetic design to get the "optimal" bearingless motor design that trades off between efficiency and suspension force.
 
-The package management software conda makes things easier for newbies, and we will install miniconda
+We do iterative design of motor drives that cover power electronics from 600V 20A to 80V 120A. 
+The network burden can be reduced using our four-in-one-drive.
 
-> mkdir -p ~/miniconda3
-> wget was unable to establish SSL connection
-> so I manually go to https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh and download miniconda for linux
-> bash ~/miniconda3/Miniconda3-latest-Linux-x86_64.sh -b -u -p ~/miniconda3
-> ~/miniconda3/bin/conda init bash
+We build robot face that helps man to understand robot's feeling.
 
+Our lab is equipped with HBM 6-axis load cell (force sensor) and Yokogawa DL950 ScopeCorder.
+We have two 4090 PC (one with intel CPU and one with AMD CPU).
 
-**Step 4, install drake.**
-> https://drake.mit.edu/pydrake/pydrake.tutorials.html
-> https://drake.mit.edu/python_bindings.html#using-the-python-bindings
-
-My steps for reference (using miniconda):
-```bash
-pip install drake underactuated notebook ipywidgets
-```
-
-My steps for reference (using venv, not recommended anymore):
-```bash
-# ON WSL2 Ubuntu 20.04
-
-# get rid of the old python3 (mine is a python3.8)
-sudo apt-get clean
-sudo apt-get autoremove --purge
-sudo apt-get remove python3
-sudo apt-get autoremove
-
-# get 
-sudo apt-get update
-sudo apt-get install python3
-sudo apt install python3-pip
-sudo apt install python3.8-venv
-
-python3 -m venv main2 # this will create a folder named "./main2" in the current directory "."
-# source main3/bin/activate # use this to activate the virtual env
-
-main2/bin/pip install --upgrade pip # drake requires pip version > 20.3
-main2/bin/pip install drake
-main2/bin/pip install underactuated
-main2/bin/pip install notebook
-main2/bin/pip install ipywidgets
-
-main2/bin/python3 -m pydrake.tutorials
-  # this gives: ERROR: the Jupyter notebook runtime is not installed!
-  # but you can now run ipynb files from the course companion codes.
-
-  # http://localhost:7000/
-```
-
-
-
-
-
-<!-- BUT somehow I cannot enable my python3 venv encironment in wsl2. Instead, I run pydrake without setting an virtual environment. -->
-<!-- Step 4, https://github.com/RussTedrake/underactuated
-`git clone https://github.com/RussTedrake/underactuated.git`
-to run, e.g., ipynb in folder ./dp, you need to fix the dependency issue by adding following snippets
-```python
-import sys; sys.path.insert(0, '/home/hory/codes/underactuated')
-import sys; sys.path.append('../')
-import sys, os; sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-```
-
-`pip3 install mpld3 packaging`
- -->
-
-
-
-**Step 4, go through [official tutorials](https://github.com/RussTedrake/underactuated)**
-
-I personally like `cartpole_urdf.ipynb`, `cartpole_balancing.ipynb`, and `authoring_multibody_simulaiton.py` the most.
+We do BBQ when there is thundering in the near sky
 
 ---
 Other related Links:
