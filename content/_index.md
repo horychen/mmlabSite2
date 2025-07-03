@@ -8,7 +8,7 @@ sections:
   # 封腰
   - block: hero
     content:
-      title: motor and motion-control lab
+      title: <a href="https://horychen.github.io/mmlabSite3/">motor and motion-control lab</a>
       image:
         filename: hero-academic.png
       cta:
