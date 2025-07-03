@@ -251,10 +251,12 @@ sections:
       directions: Enter SIST Building 1, find Area D and take the lift to 1D-206 on Floor 2.
       text: |-
         {{% callout note %}}
-        [Graduate] We have one vacancy for year 2025 academic master student candidate. Please fill out the questionaire (https://www.wjx.top/vm/PRrcaUS.aspx# ) and send me an email if you are interested.
+        [Graduate] For prospective master students of academic year 2026, we are currently receiving applications from candidates more than we need. Please only send email if you are really determined to join us. This will save both of us some time.
 
         [Undergraduate] If you are a student on campus please feel free to shoot me an email if interested in m&m lab.
         {{% /callout %}}
+      # Please fill out the questionaire (https://www.wjx.top/vm/PRrcaUS.aspx# ) and send me an email if you are interested.
+
       # [Graduate] (We are full for year 2024 candidates)
       # We currently have one position open for an engineering master, please fill out this questionare (https://www.wjx.top/vm/wF0l6L2.aspx#) and send me an email.
 
